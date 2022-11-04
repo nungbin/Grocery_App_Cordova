@@ -1,0 +1,88 @@
+<mvc:View controllerName="groceryappfb.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" 
+    displayBlock="true"
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core"
+    xmlns:cust="groceryappfb.control"
+    >
+    <Page id="page" showHeader="false">
+        <content>
+            <VBox class="sapUiSmallMargin">
+                <f:Form id="FormChange354"
+                    editable="true">
+                    <f:title>
+                        <core:Title text="Login" />
+                    </f:title>
+                    <f:layout>
+                        <f:ResponsiveGridLayout
+                            labelSpanXL="3"
+                            labelSpanL="3"
+                            labelSpanM="3"
+                            labelSpanS="12"
+                            adjustLabelSpan="false"
+                            emptySpanXL="4"
+                            emptySpanL="4"
+                            emptySpanM="4"
+                            emptySpanS="0"
+                            columnsXL="1"
+                            columnsL="1"
+                            columnsM="1"
+                            singleContainerFullSize="false" />
+                    </f:layout>                    
+                    <f:formContainers>
+                        <f:FormContainer>
+                            <f:formElements>
+                                <f:FormElement label="{i18n>email}">
+                                    <f:fields>
+                                        <Input value="{EMail}" id="idEmail" type="Email"/>
+                                    </f:fields>
+                                </f:FormElement>
+                            </f:formElements>
+                            <f:formElements>
+                                <f:FormElement label="{i18n>password}">
+                                    <f:fields>
+                                        <Input value="{Password}" id="idPassword" type="Password">
+                                        </Input>
+                                        <core:Icon
+                                            src="sap-icon://show"
+                                            size="2rem"
+                                            press="onShowHidePassword">
+                                        </core:Icon>
+                                    </f:fields>
+                                </f:FormElement>
+                            </f:formElements>    
+                        </f:FormContainer>
+                    </f:formContainers>
+                </f:Form>
+            </VBox>
+            <VBox visible="false">
+                <items>
+                    <cust:CustomDropdown id="idCustDropdown"
+                                         placeholder="{/test/placeholder}"
+                                         selectionChange=".onItemSelected"
+                                         addStore=".onAddStore"
+                                         items="{/test2}" >
+                        <cust:items>
+                            <ActionListItem text="{text}"/>
+                        </cust:items>
+                    </cust:CustomDropdown>
+                </items>
+            </VBox>
+        </content>
+        <footer>
+            <Bar>
+                <contentLeft>
+                    <Button text="{i18n>login}"
+                            press="onLogin"
+                            width="7rem"
+                            type="Emphasized"
+                            icon="sap-icon://accept"
+                            ariaDescribedBy="defaultButtonDescription genericButtonDescription">
+                    </Button>
+                </contentLeft>
+            </Bar>        
+        </footer>
+    </Page>
+</mvc:View>

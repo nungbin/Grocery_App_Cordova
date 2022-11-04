@@ -1,0 +1,16 @@
+{
+    "signedInUser":     "",
+    "groceryModelName": "Grocery",
+    "DDStoreValue":     "",
+    "DDStore":          [],
+    "DDIngre":          [],
+    "GroceryList":      [],
+    "PastGroceryList":  [],
+    "saveIngreToStore": {
+        "OK":               false,
+        "ingredient":       "",
+        "JPGURL":           "",
+        "saveIngreToStore": []
+    },
+    "suggestionItems": []
+}
