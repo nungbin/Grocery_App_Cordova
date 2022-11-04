@@ -1,0 +1,13 @@
+{
+    "electron": {
+    	"linux": {
+    	    "package": [ "deb" ],
+    	    "arch":    [ "x64" ]
+    	},
+        "windows": {
+            "package": [ "portable" ],
+            "arch":    [ "x64" ]
+        }
+    }
+}
+
