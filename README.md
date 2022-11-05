@@ -1,5 +1,5 @@
 # Grocery_App_Cordova
-Grocery App by Cordova
+Grocery App to manage groceries
 
 ## Requirements 
 1. Download UI5 Runtime Mobile: https://openui5.org/releases. Version should be under 1.100
