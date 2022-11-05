@@ -9,10 +9,10 @@ Grocery App by Cordova
 5. Install [Cordova](https://cordova.apache.org/) 
 
 ## Make a web app
-- cordova serve
+- `cordova serve`
 
 ## Make an Android app
-- cordova build android
+- `cordova build android`
 
 ## Make an Electron app
-- cordova build electron
+- `cordova build electron`
