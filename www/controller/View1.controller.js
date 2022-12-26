@@ -86,7 +86,6 @@ sap.ui.define([
                         }
                     })
                     .catch((error) => {
-                        alert(error);
                         console.log(error);
                         MessageToast.show(that._i18n.getText("signInBad"));
                         oGlobalBusyDialog.close();
